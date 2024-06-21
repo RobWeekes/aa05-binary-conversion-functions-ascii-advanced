@@ -9,17 +9,21 @@ Consult documentation on how to utilize the following methods:
 
 /* Base 2 to base 16 */
 function binaryToHexadecimal(blob) {
-  // Your code here 
+  let baseTen = parseInt(blob.slice(2),2);
+  console.log(baseTen);
+  return '0x' + baseTen.toString(16)
+
 }
 
 /* Base 16 to base 2 */
 function hexadecimalToBinary(blob) {
-  // Your code here 
+  let baseTen = parseInt(blob.slice(2),16);
+  return '0b' + baseTen.toString(2)
 }
 
 /* Base 10 to ASCII */
 function decimalToAscii(blob) {
-  // Your code here 
+  return String.fromCharCode(blob)
 }
 
 /* Base 2 to ASCII */
