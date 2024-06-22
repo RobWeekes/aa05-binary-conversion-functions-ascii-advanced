@@ -39,10 +39,10 @@ function hexadecimalToAscii(blob) {
 function asciiToDecimal(blob) {
     const codes = [];
     let arr = blob.split('');
-    arr.forEach((char) => codes.push(char.charCodeAt(0)));
-    // for(let i = 0; i < blob.length; i++) {
-    //     codes.push(blob.charCodeAt(i));
-    // }
+    // arr.forEach((char) => codes.push(char.charCodeAt(0)));
+    for(let i = 0; i < blob.length; i++) {
+        codes.push(blob.charCodeAt(i));
+    }
     return codes;
 }
 
